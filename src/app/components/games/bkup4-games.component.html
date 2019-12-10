@@ -1,0 +1,14 @@
+
+<div  class="mat-elevation-z8">
+  <mat-spinner [style.display]="loading ? 'block' : 'none'"></mat-spinner>
+</div>
+<div cfxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+  <div *ngFor="let game of games" >
+    <mat-card class="card-picture">
+      <img mat-card-image src="assets/img/NHL-Islanders.png" >
+      <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
+              <span>{{game.teamID}}</span>
+      </mat-card-title>
+    </mat-card>
+  </div>
+</div>

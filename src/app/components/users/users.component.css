@@ -1,0 +1,15 @@
+.container {
+  min-height: 100%;
+  width: 100%;
+  padding: 2px 16px;
+}
+
+.userGrid{
+  display:grid;
+  grid-template-columns: 4fr 1fr;
+  /*
+  grid-column-gap:1em;
+  grid-row-gap:1em;
+  */
+  grid-gap:2em;
+}
